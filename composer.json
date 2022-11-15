@@ -1,0 +1,21 @@
+{
+    "name": "webvpf/wn-dashboardwidgets-plugin",
+    "type": "winter-plugin",
+    "description": "Dashboard Widgets - plugin for Winter CMS.",
+    "homepage": "https://github.com/WebVPF/wn-dashboardwidgets-plugin",
+    "keywords": ["winter cms", "wintercms", "wintercms-plugin"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WebVPF",
+            "role": "Author"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/WebVPF/wn-dashboardwidgets-plugin/issues",
+        "source": "https://github.com/WebVPF/wn-dashboardwidgets-plugin"
+    },
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

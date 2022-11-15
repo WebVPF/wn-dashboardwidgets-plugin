@@ -1,0 +1,42 @@
+<div class="report-widget">
+    <h3><?= e(trans($this->property('title'))) ?></h3>
+
+    <?php if (!isset($error)): ?>
+        <div class="control-status-list">
+            <ul>
+                <li>
+                    <span class="status-icon" style="background: #00f"><i class="icon-server"></i></span>
+                    <span class="status-text"><?= e(trans('webvpf.dashboardwidgets::lang.sysinfo.server')) ?></span>
+                    <span class="status-label primary"><?= $system_info['server'] ?></span>
+                </li>
+                <li>
+                    <span class="status-icon" style="background: #000"><i class="icon-location-crosshairs"></i></span>
+                    <span class="status-text"><?= e(trans('webvpf.dashboardwidgets::lang.sysinfo.server_addr')) ?></span>
+                    <span class="status-label primary"><?= $_SERVER['SERVER_ADDR'] ?></span>
+                </li>
+                <li>
+                    <span class="status-icon" style="background: #7377ad"><i class="icon-brands icon-php"></i></span>
+                    <span class="status-text">PHP</span>
+                    <span class="status-label primary"><?= $system_info['php'] ?></span>
+                </li>
+                <li>
+                    <span class="status-icon" style="background: #ff2d20"><i class="icon-brands icon-laravel"></i></span>
+                    <span class="status-text"><?= e(trans('webvpf.dashboardwidgets::lang.sysinfo.laravel')) ?></span>
+                    <span class="status-label primary"><?= $system_info['laravel'] ?></span>
+                </li>
+                <li>
+                    <span class="status-icon" style="background: #bacf29"><i class="icon-pagelines"></i></span>
+                    <span class="status-text"><?= e(trans('webvpf.dashboardwidgets::lang.sysinfo.twig')) ?></span>
+                    <span class="status-label primary"><?= $system_info['twig'] ?></span>
+                </li>
+                <li>
+                    <span class="status-icon" style="background: #9400d3"><i class="icon-database"></i></span>
+                    <span class="status-text"><?= e(trans('webvpf.dashboardwidgets::lang.sysinfo.db')) ?></span>
+                    <span class="status-label primary"><?= config('database.default') ?></span>
+                </li>
+            </ul>
+        </div>
+    <?php else: ?>
+        <p class="flash-message static warning"><?= e($error) ?></p>
+    <?php endif ?>
+</div>
