@@ -28,4 +28,23 @@ return [
             'db_desc' => 'Show database system',
         ],
     ],
+    'cacheinfo' => [
+        'btn_clear' => 'Clear',
+        'request_confirm' => 'Are you sure you want to clear the Application Cache?',
+        'flash_success' => 'Application cache cleared successfully',
+        'units' => [
+            'b' => 'B',
+            'kb' => 'KB',
+            'mb' => 'MB',
+            'gb' => 'GB',
+            'tb' => 'TB',
+            'pb' => 'PB',
+        ],
+        'prop' => [
+            'default_widget_title' => 'Application Cache',
+            'diameter' => 'Chart size',
+            'diameter_desc' => 'Chart diameter in pixels',
+            'invalid_diameter' => 'The chart size value must be a number.',
+        ],
+    ],
 ];

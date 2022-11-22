@@ -39,6 +39,13 @@ class Plugin extends PluginBase
                 //     'webvpf.dashboardwidgets.widgets.systeminfo',
                 // ],
             ],
+            \WebVPF\DashboardWidgets\ReportWidgets\SystemCache::class => [
+                'label'   => 'Cache',
+                'context' => 'dashboard',
+                // 'permissions' => [
+                //     'webvpf.dashboardwidgets.widgets.systemcache',
+                // ],
+            ],
         ];
     }
 

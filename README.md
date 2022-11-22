@@ -8,4 +8,6 @@ Widgets for Dashboard Winter CMS.
 composer require webvpf/wn-dashboardwidgets-plugin
 ```
 
-![screen](https://raw.githubusercontent.com/WebVPF/wn-dashboardwidgets-plugin/main/assets/img/screen-sysinfo.jpg)
+![system info widget screen](https://raw.githubusercontent.com/WebVPF/wn-dashboardwidgets-plugin/main/assets/img/screen-sysinfo.jpg)
+
+![cache widget screen](https://raw.githubusercontent.com/WebVPF/wn-dashboardwidgets-plugin/main/assets/img/screen-syscache.jpg)
