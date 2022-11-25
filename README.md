@@ -1,6 +1,6 @@
 # Dashboard Widgets
 
-Widgets for Dashboard Winter CMS.
+A collection of report widgets for the Winter CMS dashboard.
 
 ## Installing Composer
 
