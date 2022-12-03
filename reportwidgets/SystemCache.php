@@ -101,7 +101,7 @@ class SystemCache extends ReportWidgetBase
 
     private function getSizeCache()
     {
-        $size = [
+        $bytes = [
             'cms' => $this->getDirectorySize(storage_path() . '/cms/cache'),
             'combiner' => $this->getDirectorySize(storage_path() . '/cms/combiner'),
             'twig' => $this->getDirectorySize(storage_path() . '/cms/twig'),
@@ -109,15 +109,15 @@ class SystemCache extends ReportWidgetBase
         ];
 
         $units = [
-            'cms' => $this->formatSize($size['cms']),
-            'combiner' => $this->formatSize($size['combiner']),
-            'twig' => $this->formatSize($size['twig']),
-            'framework' => $this->formatSize($size['framework']),
-            'all_cache' => $this->formatSize(array_reduce($size, function($acc, $item) {
+            'cms' => $this->formatSize($bytes['cms']),
+            'combiner' => $this->formatSize($bytes['combiner']),
+            'twig' => $this->formatSize($bytes['twig']),
+            'framework' => $this->formatSize($bytes['framework']),
+            'all_cache' => $this->formatSize(array_reduce($bytes, function($acc, $item) {
                 return $acc + $item;
             })),
         ];
 
-        return $units;
+        return [$bytes, $units];
     }
 }

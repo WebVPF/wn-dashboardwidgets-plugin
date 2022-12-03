@@ -6,13 +6,13 @@
             class="control-chart centered"
             data-control="chart-pie"
             data-size="<?= $diameter ?>"
-            data-center-text="<?= $size['all_cache'] ?>"
+            data-center-text="<?= $size[1]['all_cache'] ?>"
         >
             <ul>
-                <li>cms/cache <span><?= $size['cms'] ?></span></li>
-                <li>cms/combiner <span><?= $size['combiner'] ?></span></li>
-                <li>cms/twig <span><?= $size['twig'] ?></span></li>
-                <li>framework/cache <span><?= $size['framework'] ?></span></li>
+                <li>cms/cache <span><bytes class="hide"><?= $size[0]['cms'] ?></bytes>&nbsp;<?= $size[1]['cms'] ?></span></li>
+                <li>cms/combiner <span><bytes class="hide"><?= $size[0]['combiner'] ?></bytes>&nbsp;<?= $size[1]['combiner'] ?></span></li>
+                <li>cms/twig <span><bytes class="hide"><?= $size[0]['twig'] ?></bytes>&nbsp;<?= $size[1]['twig'] ?></span></li>
+                <li>framework/cache <span><bytes class="hide"><?= $size[0]['framework'] ?></bytes>&nbsp;<?= $size[1]['framework'] ?></span></li>
             </ul>
 
             <button
