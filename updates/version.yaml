@@ -1,3 +1,4 @@
 1.0.1: First version of DashboardWidgets
 1.1.1: Added cache widget
 1.1.2: Fixed cache chart
+1.1.3: Improved calculation of total cache memory
