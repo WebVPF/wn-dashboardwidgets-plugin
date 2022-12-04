@@ -113,9 +113,7 @@ class SystemCache extends ReportWidgetBase
             'combiner' => $this->formatSize($bytes['combiner']),
             'twig' => $this->formatSize($bytes['twig']),
             'framework' => $this->formatSize($bytes['framework']),
-            'all_cache' => $this->formatSize(array_reduce($bytes, function($acc, $item) {
-                return $acc + $item;
-            })),
+            'all_cache' => $this->formatSize( array_sum($bytes) ),
         ];
 
         return [$bytes, $units];
